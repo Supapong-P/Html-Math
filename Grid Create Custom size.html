@@ -8,14 +8,14 @@ Your browser does not support the HTML canvas tag.</canvas>
 <script>
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
-var n = 5 ;
+var n = 10 ;
 
 for (let i =1; i <= n ; i ++)
 {
-ctx.moveTo(i/n*(500),0);
-ctx.lineTo(i/n*(500),500);
-ctx.moveTo(0,i/n*(500));
-ctx.lineTo(500,i/n*(500));
+ctx.moveTo(i/n*(c.width),0);
+ctx.lineTo(i/n*(c.width),c.height);
+ctx.moveTo(0,i/n*(c.height));
+ctx.lineTo(c.width,i/n*(c.height));
 ctx.stroke();
 }
 
