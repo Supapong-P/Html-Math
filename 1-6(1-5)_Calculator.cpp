@@ -6,7 +6,7 @@ int main() {
   float a, b, result;
   cout << "Enter first operands : ";
   cin >> a ;
-  cout << "Enter operator: +, -, *, /: ";
+  cout << "Enter operator: +, -, *, / , ^ : ";
   cin >> op;
   cout << "Enter second operands : ";
   cin >> b;
@@ -18,6 +18,8 @@ int main() {
         result = a * b;
     else if (op == '/')
         result = a / b;
+    else if (op == '^')
+        result = pow(a,b);
     else {
         cout << "Error! Operator is not correct";
         result = -DBL_MAX;
